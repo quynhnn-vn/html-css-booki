@@ -1,0 +1,11 @@
+* {
+  font-family: "Mukta", sans-serif;
+  box-sizing: border-box;
+  align-items: center;
+  margin: 0;
+}
+:root {
+  --grey: #f2f2f2;
+  --blue: #0065fc;
+  --white: #ffffff;
+}
