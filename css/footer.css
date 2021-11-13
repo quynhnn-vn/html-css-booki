@@ -1,0 +1,24 @@
+.footer-container {
+  background: var(--grey);
+  margin: 20px;
+  padding: 10px;
+}
+.footer-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.footer-items {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.footer-items li:first-of-type {
+  font-weight: bold;
+  line-height: 50px;
+}
+.footer-items li a {
+  text-decoration: none;
+  color: inherit;
+}
