@@ -1,0 +1,14 @@
+.hebergements-container {
+  background: var(--grey);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+.hebergements-container {
+}
+.hebergements-item img {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 200px;
+  height: 100px;
+}
