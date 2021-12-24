@@ -1,0 +1,7 @@
+.filters-icon {
+  background: var(--light-blue);
+  color: var(--blue);
+  font-size: 1.3em;
+  padding: 10px 15px;
+  border-radius: 50%;
+}

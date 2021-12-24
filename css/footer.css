@@ -1,12 +1,14 @@
 .footer-container {
   background: var(--grey);
-  max-width: 80%;
-  padding: 10px;
+  max-width: 100%;
+  padding: 15px 5%;
+  margin-top: 35px;
 }
 .footer-list {
   display: flex;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 20%;
   list-style-type: none;
   padding-inline-start: 0;
 }
