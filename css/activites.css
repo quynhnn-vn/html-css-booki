@@ -61,3 +61,14 @@
 .small-card img {
   height: 100px;
 }
+@media only screen and (max-width: 600px) {
+  .activites-container {
+    flex-direction: column;
+  }
+  .activites-item {
+    width: 100%;
+  }
+  .big-card img {
+    height: 120px;
+  }
+}
