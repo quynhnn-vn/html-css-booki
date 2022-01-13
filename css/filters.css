@@ -3,7 +3,16 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 15px 5%;
+  padding: 10px 5%;
+}
+.filters-title-container {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.filters-title {
+  font-weight: bold;
+  padding-right: 30px;
 }
 .filters-container {
   width: 100%;
@@ -12,7 +21,7 @@
   gap: 2%;
 }
 .filters-button {
-  border: 1px solid var(--grey);
+  border: 2px solid var(--grey);
   background: white;
   height: 48px;
   min-width: 130px;
@@ -20,6 +29,7 @@
   align-items: center;
   padding: 0;
   border-radius: 40px;
+  font-weight: bold;
 }
 .filters-icon {
   background: var(--light-blue);
@@ -36,11 +46,16 @@
 }
 .filters-text {
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
+}
+.info-container {
+  padding: 10px 0;
 }
 .info-container .icon i {
   color: white;
   background: var(--blue);
   border: 1px solid var(--grey);
   border-radius: 50%;
+  font-size: 20px;
+  margin-right: 5px;
 }

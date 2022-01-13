@@ -1,6 +1,7 @@
 .header-container {
   width: 100%;
   padding: 15px 5%;
+  padding-top: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -9,11 +10,15 @@
 }
 .navigation-container {
   display: flex;
-  gap: 90px;
 }
 .navigation-container a {
   text-decoration: none;
   padding-top: 20px;
+  height: 60px;
+  width: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 .navigation-container a:first-child {
   border-top: 1px solid var(--blue);
@@ -24,7 +29,10 @@
   color: inherit;
 }
 .intro-container {
-  padding: 15px 5%;
+  padding: 10px 5%;
+}
+.intro-container h2 {
+  margin: 10px auto;
 }
 .form-container {
   display: flex;
@@ -34,6 +42,7 @@
   background: var(--grey);
   width: 45px;
   height: 45px;
+  padding: 10px;
   border: 1px solid var(--grey);
   border-radius: 15px 0 0 15px;
   display: flex;
@@ -41,17 +50,23 @@
   justify-content: center;
 }
 .form-container input[type="text"] {
-  width: 170px;
+  width: 250px;
   height: 45px;
+  padding: 10px;
   border: 1px solid var(--grey);
+  font-weight: bold;
+  font-size: 16px;
 }
 .form-container input[type="submit"] {
   height: 45px;
-  width: 100px;
+  width: fit-content;
+  padding: 10px;
   background: var(--blue);
   color: white;
   border: 1px solid var(--blue);
   border-radius: 0 15px 15px 0;
+  font-weight: bold;
+  font-size: 16px;
 }
 @media only screen and (max-width: 600px) {
   .header-container {

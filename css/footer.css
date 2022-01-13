@@ -16,10 +16,15 @@
 .footer-items {
   list-style-type: none;
   padding-inline-start: 0;
+  margin-bottom: 30px;
+}
+.footer-items li {
+  margin: 10px 0;
 }
 .footer-items li:first-of-type {
   font-weight: bold;
-  line-height: 50px;
+  line-height: 60px;
+  font-size: 16px;
 }
 .footer-items li a {
   text-decoration: none;

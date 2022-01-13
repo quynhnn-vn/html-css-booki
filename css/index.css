@@ -12,3 +12,7 @@
 h2 {
   font-size: 20px;
 }
+p,
+span {
+  font-size: 16px;
+}
