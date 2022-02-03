@@ -2,13 +2,13 @@
   max-width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 .activites-title {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 40px 5%;
 }
 .activites-title h2 {
   margin-bottom: 20px;
@@ -20,10 +20,11 @@
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 30px;
 }
 .activites-item {
-  width: calc(100% / 4 - 40px);
-  height: 450px;
+  width: calc(100% / 4 - 30px);
+  height: 400px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -38,36 +39,62 @@
   border-radius: 15px 15px 0 0;
 }
 .activites-item h4 {
-  padding: 15px;
+  margin: auto 0;
+  padding-left: 10px;
 }
-.activites-item img {
+.activites-item > img {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 50px);
 }
 .big-card,
 .medium-card,
 .small-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.big-card img {
-  height: 200px;
+.big-card {
+  height: calc(60% - 15px);
 }
-.medium-card img {
-  height: 150px;
+.medium-card {
+  height: calc(50% - 15px);
 }
+.small-card {
+  height: calc(40% - 15px);
+}
+.big-card img,
+.medium-card img,
 .small-card img {
-  height: 100px;
+  width: 100%;
+  height: calc(100% - 50px);
 }
-@media only screen and (max-width: 600px) {
-  .activites-container {
-    flex-direction: column;
-  }
+@media only screen and (max-width: 992px) {
   .activites-item {
-    width: 100%;
+    width: calc(100% / 2 - 30px);
   }
-  .big-card img {
-    height: 120px;
+}
+@media only screen and (max-width: 768px) {
+  .activites-section-container {
+    padding: 10px 5% 0 5%;
+  }
+  .activites-item:nth-of-type(odd) {
+    width: 100%;
+    height: 200px;
+  }
+  .activites-item:nth-of-type(even) {
+    width: 100%;
+    height: 400px;
+  }
+  .big-card,
+  .medium-card,
+  .small-card {
+    width: 100%;
+    height: calc(50% - 15px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }

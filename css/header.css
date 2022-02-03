@@ -1,27 +1,27 @@
 .header-container {
   width: 100%;
-  padding: 15px 5%;
+  height: 100px;
   padding-top: 0;
   display: flex;
   justify-content: space-between;
 }
 .header-container img {
-  width: 120px;
+  width: 100px;
 }
 .navigation-container {
   display: flex;
+  height: 100%;
 }
 .navigation-container a {
   text-decoration: none;
-  padding-top: 20px;
-  height: 60px;
   width: 150px;
+  height: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  font-size: 13px;
 }
 .navigation-container a:first-child {
-  border-top: 1px solid var(--blue);
+  border-top: 2px solid var(--blue);
   color: var(--blue);
 }
 .navigation-container a:last-child {
@@ -29,14 +29,14 @@
   color: inherit;
 }
 .intro-container {
-  padding: 10px 5%;
-}
-.intro-container h2 {
-  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-start;
 }
 .form-container {
   display: flex;
-  padding: 15px 5%;
 }
 .form-icon {
   background: var(--grey);
@@ -50,12 +50,12 @@
   justify-content: center;
 }
 .form-container input[type="text"] {
-  width: 250px;
+  max-width: 250px;
   height: 45px;
   padding: 10px;
   border: 1px solid var(--grey);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 13px;
 }
 .form-container input[type="submit"] {
   height: 45px;
@@ -66,13 +66,48 @@
   border: 1px solid var(--blue);
   border-radius: 0 15px 15px 0;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 13px;
 }
-@media only screen and (max-width: 600px) {
+.submit-icon {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
   .header-container {
     flex-direction: column;
   }
   .navigation-container {
     width: 100%;
+  }
+  .navigation-container a {
+    flex: 1 1;
+  }
+  .navigation-container a:first-child {
+    border-top: none;
+    border-bottom: 2px solid var(--blue);
+    color: var(--blue);
+  }
+  .navigation-container a:last-child {
+    border-top: none;
+    border-bottom: 2px solid var(--grey);
+  }
+  .intro-container {
+    padding: 0 5%;
+  }
+  .form-container input[type="submit"] {
+    display: none;
+  }
+  .submit-icon {
+    background-color: var(--blue);
+    color: white;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 10px;
   }
 }

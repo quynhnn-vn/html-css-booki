@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/logo/Booki@3x.png" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/filters.css" />
@@ -23,8 +24,9 @@
     <title>Booki</title>
   </head>
   <body>
+    <main class="body-container">
     <header class="header-container">
-      <img src="./assets/images/logo/Booki.png" alt="logo" />
+      <img src="./images/logo/Booki.png" alt="logo" />
       <div class="navigation-container">
         <a href="#hébergements">Hébergements</a>
         <a href="#activités">Activités</a>
@@ -34,12 +36,13 @@
       <div class="intro-container">
         <h2>Trouver votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
+        <form class="form-container">
+          <span class="form-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <input type="text" value="Marseille, France" />
+          <input type="submit" value="Rechercher"/>
+          <span class="submit-icon"><i class="fas fa-search"></i></span>
+        </form>
       </div>
-      <form class="form-container">
-        <span class="form-icon"><i class="fas fa-map-marker-alt"></i></span>
-        <input type="text" value="Marseille, France" />
-        <input type="submit" value="Rechercher" />
-      </form>
     </section>
     <section id="filters">
       <div class="filters-info-container">
@@ -85,7 +88,7 @@
           <div class="hebergements-container">
             <div class="hebergements-item">
               <img
-                src="./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                src="./images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
               />
               <div class="hebergement-text">
                 <h4>Auberge La Cannebière</h4>
@@ -101,7 +104,7 @@
             </div>
             <div class="hebergements-item">
               <img
-                src="./assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                src="./images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
               />
               <div class="hebergement-text">
                 <h4>Hôtel du port</h4>
@@ -117,7 +120,7 @@
             </div>
             <div class="hebergements-item">
               <img
-                src="./assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                src="./images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg"
               />
               <div class="hebergement-text">
                 <h4>Hôtel Les mouettes</h4>
@@ -133,7 +136,7 @@
             </div>
             <div class="hebergements-item">
               <img
-                src="./assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                src="./images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
               />
               <div class="hebergement-text">
                 <h4>Hôtel de la mer</h4>
@@ -149,7 +152,7 @@
             </div>
             <div class="hebergements-item">
               <img
-                src="./assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                src="./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
               />
               <div class="hebergement-text">
                 <h4>Auberge Le Panier</h4>
@@ -165,7 +168,7 @@
             </div>
             <div class="hebergements-item">
               <img
-                src="./assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                src="./images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
               />
               <div class="hebergement-text">
                 <h4>Hôtel chez Amina</h4>
@@ -190,7 +193,7 @@
           <div class="most-populaire-container">
             <div class="most-populaire-item">
               <img
-                src="./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               />
               <div class="most-populaire-icons-text">
                 <div class="most-populaire-text">
@@ -208,7 +211,7 @@
             </div>
             <div class="most-populaire-item">
               <img
-                src="./assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                src="./images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
               />
               <div class="most-populaire-icons-text">
                 <div class="most-populaire-text">
@@ -226,7 +229,7 @@
             </div>
             <div class="most-populaire-item">
               <img
-                src="./assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                src="./images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               />
               <div class="most-populaire-icons-text">
                 <div class="most-populaire-text">
@@ -253,40 +256,40 @@
           <div class="activites-container">
             <div class="activites-item">
               <img
-                src="./assets/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               />
-              <h4>View Port</h4>
+              <h4>Vieux Port</h4>
             </div>
             <div class="activites-item">
               <div class="big-card">
                 <img
-                  src="./assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 />
                 <h4>Fort de Pomègues</h4>
               </div>
               <div class="small-card">
                 <img
-                  src="./assets/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  src="./images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                 />
                 <h4>Îles du Frioul</h4>
               </div>
             </div>
             <div class="activites-item">
               <img
-                src="./assets/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
               />
               <h4>Parc National des Calanques</h4>
             </div>
             <div class="activites-item">
               <div class="medium-card">
                 <img
-                  src="./assets/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  src="./images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                 />
                 <h4>Notre-Dame-de-la-Garde</h4>
               </div>
               <div class="medium-card">
                 <img
-                  src="./assets/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                 />
                 <h4>Parc Longchamp</h4>
               </div>
@@ -295,6 +298,7 @@
         </div>
       </div>
     </section>
+  </main>
     <footer class="footer-container">
       <ul class="footer-list">
         <ul class="footer-items">
