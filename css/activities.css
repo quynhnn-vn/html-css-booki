@@ -1,19 +1,19 @@
-.activites-section-container {
+.activities-section-ctn {
   max-width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 10px;
 }
-.activites-title {
+.activities-title {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.activites-title h2 {
+.activities-title h2 {
   margin-bottom: 20px;
 }
-.activites-container {
+.activities-ctn {
   width: 100%;
   height: fit-content;
   display: flex;
@@ -22,40 +22,45 @@
   flex-wrap: wrap;
   row-gap: 30px;
 }
-.activites-item {
+.activities-item {
   width: calc(100% / 4 - 30px);
-  height: 400px;
+  height: 450px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
-.activites-item:nth-of-type(odd) {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.activities-ctn > a {
+  text-decoration: none;
+  color: inherit;
+  box-shadow: var(--shadow);
+  cursor: pointer;
 }
-.activites-item img {
+.activities-item img {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.activites-item h4 {
+.activities-item h4 {
   margin: auto 0;
   padding-left: 10px;
 }
-.activites-item > img {
+.activities-item > img {
   width: 100%;
   height: calc(100% - 50px);
 }
 .big-card,
 .medium-card,
 .small-card {
+  text-decoration: none;
+  color: inherit;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   border-radius: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
 }
 .big-card {
   height: calc(60% - 15px);
@@ -73,28 +78,26 @@
   height: calc(100% - 50px);
 }
 @media only screen and (max-width: 992px) {
-  .activites-item {
+  .activities-item {
     width: calc(100% / 2 - 30px);
   }
 }
 @media only screen and (max-width: 768px) {
-  .activites-section-container {
+  .activities-section-ctn {
     padding: 10px 5% 0 5%;
   }
-  .activites-item:nth-of-type(odd) {
+  .activities-ctn > a {
     width: 100%;
     height: 200px;
   }
-  .activites-item:nth-of-type(even) {
+  .activities-ctn > div {
     width: 100%;
-    height: 400px;
+    height: 430px;
   }
   .big-card,
   .medium-card,
   .small-card {
     width: 100%;
     height: calc(50% - 15px);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 }

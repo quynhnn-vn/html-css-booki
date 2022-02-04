@@ -1,25 +1,25 @@
-.filters-info-container {
+.filter-info-ctn {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.filters-title-container {
+.filter-title-ctn {
   display: flex;
   width: 100%;
 }
-.filters-title {
+.filter-title {
   font-weight: bold;
   padding-right: 30px;
 }
-.filters-container {
+.filter-ctn {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
   row-gap: 5px;
 }
-.filters-button {
+.filter-btn {
   border: 2px solid var(--grey);
   background: white;
   height: 48px;
@@ -28,8 +28,9 @@
   padding: 0;
   border-radius: 40px;
   font-weight: bold;
+  cursor: pointer;
 }
-.filters-icon {
+.filter-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -43,14 +44,14 @@
 .heart-icon {
   padding: 15px 17px;
 }
-.filters-text {
+.filter-text {
   width: 100%;
   padding: 0 10px;
 }
-.info-container {
+.info-ctn {
   margin-top: 30px;
 }
-.info-container .icon i {
+.info-ctn .icon i {
   color: white;
   background: var(--blue);
   border: 1px solid var(--grey);
@@ -59,14 +60,14 @@
   margin-right: 5px;
 }
 @media only screen and (max-width: 992px) {
-  .filters-title-container {
+  .filter-title-ctn {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .filters-info-container {
+  .filter-info-ctn {
     padding: 0 5%;
   }
 }

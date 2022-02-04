@@ -1,12 +1,12 @@
-.hebergement-most-populaire-container {
+.location-most-popular-ctn {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 4%;
 }
-.hebergements-section-container,
-.most-populaire-section-container {
+.locations-section-ctn,
+.most-popular-section-ctn {
   height: 100%;
   background: var(--grey);
   display: flex;
@@ -15,16 +15,16 @@
   align-items: flex-start;
   border-radius: 15px;
 }
-.hebergements-section-container {
+.locations-section-ctn {
   width: 65%;
   padding: 30px 2.5%;
 }
-.most-populaire-section-container {
+.most-popular-section-ctn {
   width: 35%;
   padding: 30px 2.5% 10px 2.5%;
 }
-.hebergements-container,
-.most-populaire-container {
+.locations-ctn,
+.most-popular-ctn {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -32,56 +32,58 @@
   margin: 20px 0;
   row-gap: 30px;
 }
-.hebergements-item,
-.most-populaire-item {
+.locations-item,
+.most-popular-item {
+  text-decoration: none;
+  color: inherit;
   width: calc(100% / 3 - 10px);
   height: 200px;
   background-color: white;
   border-radius: 15px;
   padding: 4px;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  box-shadow: var(--shadow);
 }
-.hebergements-item img {
+.locations-item img {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: calc(100% - 70px);
 }
-.hebergement-text {
+.location-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 4px;
   margin: 5px;
 }
-.hebergements-section-container p:last-child {
+.locations-section-ctn p:last-child {
   font-weight: bold;
   font-size: 15px;
 }
-.most-populaire-item {
+.most-popular-item {
   display: flex;
   width: 100%;
   height: 134px;
 }
-.most-populaire-item:last-of-type {
+.most-popular-item:last-of-type {
   margin-bottom: 7px;
 }
-.most-populaire-title {
+.most-popular-title {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.most-populaire-item img {
+.most-popular-item img {
   object-fit: cover;
   border-radius: 15px 0 0 15px;
   min-width: calc(100% / 3);
   height: 100%;
 }
-.most-populaire-title i {
+.most-popular-title i {
   font-size: 20px;
 }
-.most-populaire-icons-text {
+.most-popular-icons-text {
   width: 100%;
   height: 130px;
   display: flex;
@@ -90,7 +92,7 @@
   align-items: flex-start;
   padding: 20px;
 }
-.most-populaire-text {
+.most-popular-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -112,32 +114,32 @@
   color: var(--grey);
 }
 @media only screen and (max-width: 992px) {
-  .hebergement-most-populaire-container {
+  .location-most-popular-ctn {
     flex-direction: column-reverse;
     row-gap: 20px;
   }
-  .hebergements-section-container,
-  .most-populaire-section-container {
+  .locations-section-ctn,
+  .most-popular-section-ctn {
     width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .hebergements-container,
-  .most-populaire-container {
+  .locations-ctn,
+  .most-popular-ctn {
     row-gap: 20px;
   }
-  .hebergements-section-container,
-  .most-populaire-section-container {
+  .locations-section-ctn,
+  .most-popular-section-ctn {
     border-radius: 0;
     padding: 30px 5% 10px 5%;
   }
-  .hebergements-section-container {
+  .locations-section-ctn {
     background-color: white;
   }
-  .hebergements-container {
+  .locations-ctn {
     flex-direction: column;
   }
-  .hebergements-item {
+  .locations-item {
     width: 100%;
   }
 }
