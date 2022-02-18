@@ -4,7 +4,6 @@
   align-items: flex-start;
   gap: 15px;
   width: 100%;
-  padding: 0 5%;
 }
 .form-ctn {
   display: flex;
@@ -43,7 +42,7 @@
   display: none;
 }
 @media only screen and (max-width: 768px) {
-  .intro-ctn {
+  .search-ctn {
     padding: 0 5%;
   }
   .form-ctn input[type="submit"] {
