@@ -12,10 +12,13 @@
 section {
   width: 100%;
 }
+h1 {
+  font-size: 18px;
+}
 h2 {
   font-size: 18px;
 }
-h4 {
+h3 {
   font-size: 12px;
 }
 p,

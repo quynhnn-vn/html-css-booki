@@ -43,6 +43,10 @@
   padding: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+.locations-item:hover,
+.most-popular-item:hover {
+  background-color: var(--grey);
+}
 .locations-item img {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -56,9 +60,14 @@
   gap: 4px;
   margin: 5px;
 }
-.locations-section-ctn p:last-child {
+.more-info-text {
+  text-decoration: none;
+  color: inherit;
   font-weight: bold;
   font-size: 15px;
+}
+.more-info-text:hover {
+  color: rgba(0, 0, 0, 0.2);
 }
 .most-popular-item {
   display: flex;

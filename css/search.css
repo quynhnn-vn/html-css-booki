@@ -38,6 +38,9 @@
   font-size: 13px;
   cursor: pointer;
 }
+.form-ctn input[type="submit"]:hover {
+  transform: scale(1.05);
+}
 .submit-icon {
   display: none;
 }

@@ -4,7 +4,6 @@
   justify-content: center;
   padding-top: 10px;
 }
-
 .activities-title {
   width: 100%;
   display: flex;
@@ -14,7 +13,6 @@
 .activities-title h2 {
   margin-bottom: 20px;
 }
-
 .activities-ctn {
   width: 100%;
   height: fit-content;
@@ -30,7 +28,9 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
+.activities-ctn > a:hover {
+  background-color: var(--grey);
+}
 .activities-item {
   width: calc(100% / 4 - 30px);
   height: 450px;
@@ -40,11 +40,14 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.activities-item :hover {
+  background-color: var(--grey);
+}
 .activities-item img {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
-.activities-item h4 {
+.activities-item h3 {
   margin: auto 0;
   padding-left: 10px;
 }
@@ -52,7 +55,6 @@
   width: 100%;
   height: calc(100% - 50px);
 }
-
 .big-card,
 .medium-card,
 .small-card {
