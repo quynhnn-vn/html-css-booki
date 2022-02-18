@@ -37,12 +37,8 @@
   .navigation-ctn a {
     flex: 1 1;
   }
-  .navigation-ctn a:first-child {
-    border-top: none;
-    border-bottom: 2px solid var(--blue);
-  }
-  .navigation-ctn a:last-child {
-    border-top: none;
-    border-bottom: 2px solid var(--grey);
+  .navigation-ctn a:onclick :hover {
+    border-top: 2px solid var(--blue);
+    color: var(--blue);
   }
 }
